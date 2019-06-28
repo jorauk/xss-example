@@ -32,7 +32,7 @@ def home():
 <div class="message">
 {}
 </div>
-""".format(m.content.html.escape( """& < " ' >""" ))
+""".format(html.escape((m.content)))
 
     return body 
 
